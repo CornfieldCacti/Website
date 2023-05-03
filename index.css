@@ -1,0 +1,177 @@
+/*Site Wide Constants*/
+
+h1 {
+  font-family: trebuchet;
+  font-size: 32px;
+}
+
+h2 {
+  font-family: trebuchet;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: trebuchet;
+  font-size: 18px;
+}
+
+p {
+  font-family: trebuchet;
+}
+
+.title {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.image {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text {
+  font-size: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/*Icon Bar (site wide)*/
+.icon-bar {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgray;
+  overflow: auto;
+  font-family: trebuchet;
+}
+
+.icon-bar a {
+  float: left;
+  text-align: center;
+  width: 20%;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: black;
+  font-family: trebuchet;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: lightgray; /* Add a hover color */
+  font-family: trebuchet;
+}
+
+.active {
+  background-color: #04aa6d; /* Add an active/current color */
+  font-family: trebuchet;
+}
+
+/*Bio (about)*/
+
+.bio {
+  width: 40%;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #04aa6d;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Display Members (about)*/
+.member {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.member-reverse {
+  flex-direction: row-reverse;
+}
+
+.member-image {
+  width: 250px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.member-description {
+  width: 30%;
+  padding: 20px;
+}
+
+/*Gallery Images*/
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+}
+
+/*Contact Us*/
+.contact-container {
+  width: 40%;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #04aa6d;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Social Media Links (index)*/
+.social-icons {
+  text-align: center;
+  margin: 20px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #3B5998;
+  color: white;
+
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+
+}
+
+/* YouTube */
+.fa-youtube {
+  background: red;
+  color: white;
+}
