@@ -149,43 +149,21 @@ p {
 }
 /*Social Media Links (index)*/
 .social-icons {
-  text-align: center;
+  display: flex;
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
   margin: 40px;
 }
-
-.fa {
+.social-icon {
   padding: 20px;
-  font-size: 30px;
-  width: 1%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  text-decoration: none;
+  width: 30px; /* Change this to the desired width */
+  height: auto;
+  display: inline-block;
   border-radius: 50%;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
+.social-icon:hover {
   opacity: 0.7;
-}
-
-/* Instagram */
-.fa-instagram {
-  background: #3B5998;
-  color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-
-}
-
-/* YouTube */
-.fa-youtube {
-  background: red;
-  color: white;
 }
 
 /* Add responsive breakpoints */
@@ -198,11 +176,5 @@ p {
 @media screen and (max-width: 480px) {
   .contact-container p {
     font-size: 16px;
-  }
-
-  .fa {
-    font-size: 24px;
-    padding: 10px; /* Reduce padding for smaller screens */
-    width: auto; /* Change width to auto */
   }
 }
