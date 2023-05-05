@@ -144,6 +144,9 @@ p {
   text-align: center;
 }
 
+.contact-container p {
+  word-break: break-word; /* Add this line to allow breaking of long words */
+}
 /*Social Media Links (index)*/
 .social-icons {
   text-align: center;
