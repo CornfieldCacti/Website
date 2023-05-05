@@ -178,3 +178,19 @@ p {
     font-size: 16px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .bio {
+    width: 90%; /* Change the width to fit smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .social-icons {
+    flex-wrap: wrap; /* Allow wrapping of the icons and text */
+  }
+  .social-icon {
+    padding: 10px; /* Reduce padding */
+    width: 25px; /* Reduce the icon width */
+  }
+}
