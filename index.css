@@ -42,6 +42,16 @@ p {
   padding-left: 20px;
 }
 
+/*Welcome(index)*/
+.welcome {
+  margin: 30px;
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
 /*Icon Bar (site wide)*/
 .icon-bar {
   width: 75%;
@@ -137,7 +147,7 @@ p {
 /*Social Media Links (index)*/
 .social-icons {
   text-align: center;
-  margin: 20px;
+  margin: 40px;
 }
 
 .fa {
@@ -160,7 +170,6 @@ p {
 .fa-instagram {
   background: #3B5998;
   color: white;
-
 }
 
 /* Twitter */
@@ -174,4 +183,21 @@ p {
 .fa-youtube {
   background: red;
   color: white;
+}
+
+/* Add responsive breakpoints */
+@media screen and (max-width: 768px) {
+  .icon-bar a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-container p {
+    font-size: 16px;
+  }
+
+  .fa {
+    font-size: 24px;
+  }
 }
