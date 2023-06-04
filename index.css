@@ -1,5 +1,3 @@
-/*Site Wide Constants*/
-
 h1 {
   font-family: trebuchet;
   font-size: 32px;
@@ -42,17 +40,15 @@ p {
   padding-left: 20px;
 }
 
-/* Welcome(index) */
 .welcome {
   margin: 30px;
   text-align: center;
-  display: block; /* Change display to block */
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
 }
 
-/*Icon Bar (site wide)*/
 .icon-bar {
   width: 100%;
   margin-left: auto;
@@ -74,16 +70,14 @@ p {
 }
 
 .icon-bar a:hover {
-  background-color: lightgray; /* Add a hover color */
+  background-color: lightgray;
   font-family: trebuchet;
 }
 
 .active {
-  background-color: #04aa6d; /* Add an active/current color */
+  background-color: #04aa6d; 
   font-family: trebuchet;
 }
-
-/*Bio (about)*/
 
 .bio {
   width: 40%;
@@ -95,7 +89,6 @@ p {
   text-align: center;
 }
 
-/*Display Members (about)*/
 .member {
   display: flex;
   align-items: center;
@@ -118,7 +111,6 @@ p {
   padding: 20px;
 }
 
-/*Gallery Images*/
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -133,7 +125,7 @@ p {
   height: auto;
 }
 
-/*Contact Us*/
+
 .contact-container {
   width: 40%;
   margin: 30px;
@@ -145,18 +137,18 @@ p {
 }
 
 .contact-container p {
-  word-break: break-word; /* Add this line to allow breaking of long words */
+  word-break: break-word; 
 }
-/*Social Media Links (index)*/
+
 .social-icons {
   display: flex;
-  justify-content: center; /* Add this line */
-  align-items: center; /* Add this line */
+  justify-content: center;
+  align-items: center;
   margin: 40px;
 }
 .social-icon {
   padding: 20px;
-  width: 30px; /* Change this to the desired width */
+  width: 30px; 
   height: auto;
   display: inline-block;
   border-radius: 50%;
@@ -166,7 +158,6 @@ p {
   opacity: 0.7;
 }
 
-/* Add responsive breakpoints */
 @media screen and (max-width: 768px) {
   .icon-bar a {
     font-size: 16px;
@@ -181,16 +172,16 @@ p {
 
 @media screen and (max-width: 480px) {
   .bio {
-    width: 90%; /* Change the width to fit smaller screens */
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .social-icons {
-    flex-wrap: wrap; /* Allow wrapping of the icons and text */
+    flex-wrap: wrap;
   }
   .social-icon {
-    padding: 10px; /* Reduce padding */
-    width: 25px; /* Reduce the icon width */
+    padding: 10px;
+    width: 25px;
   }
 }
