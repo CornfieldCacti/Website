@@ -151,7 +151,6 @@ p {
   width: 30px; 
   height: auto;
   display: inline-block;
-  border-radius: 50%;
 }
 
 .social-icon:hover {
