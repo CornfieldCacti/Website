@@ -25,7 +25,22 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 30%;
+}
+
+.icon-bar a {
+  float: left;
+  text-align: center;
   width: 20%;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: black;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+
+.icon-bar a:hover {
+  background-color: darkgray;
 }
 
 .image {
@@ -113,14 +128,28 @@ p {
 
 .gallery-container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 50px;
 }
 
+.gallery-column {
+  flex: 50%; /* 50% width on all screen sizes */
+  padding: 15px;
+  box-sizing: border-box;
+}
+
 .gallery-image {
-  width: 50%;
+  width: 100%; /* scale down the image to fit within the column */
   height: auto;
+  margin-bottom: 20px;
+}
+
+/* If you want to have a responsive design, you can modify the flex property in media queries */
+@media screen and (max-width: 768px) {
+  .gallery-column {
+    flex: 100%;
+  }
 }
 
 .contact-container {
