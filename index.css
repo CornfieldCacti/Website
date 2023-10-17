@@ -1,20 +1,19 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
 h1 {
-  font-family: trebuchet;
   font-size: 32px;
 }
 
 h2 {
-  font-family: trebuchet;
   font-size: 24px;
 }
 
 h4 {
-  font-family: trebuchet;
   font-size: 18px;
-}
-
-p {
-  font-family: trebuchet;
 }
 
 .title {
@@ -28,19 +27,26 @@ p {
   width: 30%;
 }
 
+.icon-bar {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  overflow: auto;
+}
+
 .icon-bar a {
   float: left;
   text-align: center;
   width: 20%;
   padding: 12px 0;
   transition: all 0.3s ease;
-  color: black;
-  font-family: 'Trebuchet MS', sans-serif;
+  color: white;
   font-size: 16px;
 }
 
 .icon-bar a:hover {
-  background-color: darkgray;
+  background-color: #894FFF;
 }
 
 .image {
@@ -64,42 +70,15 @@ p {
   width: 70%;
 }
 
-.icon-bar {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: lightgray;
-  overflow: auto;
-  font-family: trebuchet;
-}
-
-.icon-bar a {
-  float: left;
-  text-align: center;
-  width: 20%;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  color: black;
-  font-family: trebuchet;
-  font-size: 16px;
-}
-
-.icon-bar a:hover {
-  background-color: lightgray;
-  font-family: trebuchet;
-}
-
 .active {
-  background-color: #04aa6d; 
-  font-family: trebuchet;
+  background-color: #894FFF;
+  color: black;
 }
 
-.bio {
+.bio, .contact-container {
   width: 40%;
-  margin: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid #04aa6d;
+  margin: 30px auto;
+  border: 5px solid #894FFF;
   padding: 20px;
   text-align: center;
 }
@@ -134,36 +113,26 @@ p {
 }
 
 .gallery-column {
-  flex: 50%; /* 50% width on all screen sizes */
+  flex: 50%;
   padding: 15px;
   box-sizing: border-box;
 }
 
 .gallery-image {
-  width: 100%; /* scale down the image to fit within the column */
+  width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
 
-/* If you want to have a responsive design, you can modify the flex property in media queries */
 @media screen and (max-width: 768px) {
-  .gallery-column {
+  .gallery-column, .icon-bar a {
     flex: 100%;
+    font-size: 16px;
   }
 }
 
-.contact-container {
-  width: 40%;
-  margin: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid #04aa6d;
-  padding: 20px;
-  text-align: center;
-}
-
 .contact-container p {
-  word-break: break-word; 
+  word-break: break-word;
 }
 
 .social-icons {
@@ -172,9 +141,10 @@ p {
   align-items: center;
   margin: 40px;
 }
+
 .social-icon {
   padding: 20px;
-  width: 30px; 
+  width: 30px;
   height: auto;
   display: inline-block;
 }
@@ -183,28 +153,19 @@ p {
   opacity: 0.7;
 }
 
-@media screen and (max-width: 768px) {
-  .icon-bar a {
-    font-size: 16px;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .contact-container p {
     font-size: 16px;
   }
-}
 
-@media screen and (max-width: 480px) {
   .bio {
     width: 90%;
   }
-}
 
-@media screen and (max-width: 480px) {
   .social-icons {
     flex-wrap: wrap;
   }
+
   .social-icon {
     padding: 10px;
     width: 25px;
