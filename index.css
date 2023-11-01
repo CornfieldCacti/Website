@@ -16,16 +16,11 @@ h4 {
   font-size: 18px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.title {
+.title, .welcome {
   text-align: center;
 }
 
-.logo {
+.logo, .welcome {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -50,8 +45,12 @@ img {
   font-size: 16px;
 }
 
-.icon-bar a:hover {
+.icon-bar a:hover, .active {
   background-color: #894FFF;
+}
+
+.active {
+  color: black;
 }
 
 .image {
@@ -66,20 +65,6 @@ img {
   padding-left: 20px;
 }
 
-.welcome {
-  margin: 30px;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-
-.active {
-  background-color: #894FFF;
-  color: black;
-}
-
 .bio, .contact-container {
   width: 40%;
   margin: 30px auto;
@@ -88,7 +73,7 @@ img {
   text-align: center;
 }
 
-.member {
+.member, .social-icons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +85,7 @@ img {
 }
 
 .member-image {
-  width: 250px;
+  width: 40%;
   height: auto;
   margin: 0 20px;
 }
@@ -112,39 +97,46 @@ img {
 
 .gallery-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center; /* Center the images horizontally */
+  max-width: 80%;
+  margin: 0 auto;
   padding: 50px;
 }
 
-.gallery-column {
-  flex: 50%;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
 .gallery-image {
-  width: 80%;
-  margin: 0 auto;
-  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .gallery-column, .icon-bar a {
-    flex: 100%;
-    font-size: 16px;
+.gallery-image img {
+  max-width: 100%;
+  max-height: 1000px;
+  height: auto;
+  display: block; /* Make sure the images are block elements */
+  margin: 0 auto; /* Center the images within their containers */
+}
+
+/* For landscape screens */
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .gallery-container {
+    flex-direction: row;
+  }
+
+  .gallery-image.horizontal {
+    flex: 2;
+    margin-right: 2%; /* Add space between images */
+  }
+
+  .gallery-image.vertical {
+    flex: 1;
   }
 }
 
 .contact-container p {
   word-break: break-word;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px;
 }
 
 .social-icon {
@@ -156,35 +148,4 @@ img {
 
 .social-icon:hover {
   opacity: 0.7;
-}
-
-@media screen and (max-width: 768px) {
-  .gallery-image {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .gallery-image {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contact-container p {
-    font-size: 16px;
-  }
-
-  .bio {
-    width: 90%;
-  }
-
-  .social-icons {
-    flex-wrap: wrap;
-  }
-
-  .social-icon {
-    padding: 10px;
-    width: 25px;
-  }
 }
